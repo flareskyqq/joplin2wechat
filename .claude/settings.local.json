@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:home.flaresky.top)",
+      "Bash(curl -k -s \"https://home.flaresky.top:8443/shares/lliFgkAsgqs1IUt5dQD07p\")",
+      "Bash(powershell -Command \"Compress-Archive -Path '*' -DestinationPath 'D:\\\\\\\\project\\\\\\\\joplin_share\\\\\\\\joplin-share-wechat.zip' -Force\")",
+      "Bash(mv D:/project/joplin_share/joplin-share-wechat.zip D:/project/joplin_share/joplin-share-wechat.jpl)",
+      "Bash(tar -cvf ../../joplin-share-wechat.jpl *)",
+      "Bash(tar -cvf ../joplin-share-wechat.jpl .)",
+      "Bash(cp ../joplin-share-wechat.jpl \"/c/Users/flaresky/.config/joplin-desktop/plugins/\")",
+      "Bash(mkdir -p /tmp/plugin_extract2)",
+      "Read(//tmp/**)",
+      "Bash(tar -xf \"/c/Users/flaresky/.config/joplin-desktop/plugins/joplin.plugin.templates.jpl\")",
+      "Bash(mv joplin-plugin-new *)"
+    ]
+  }
+}

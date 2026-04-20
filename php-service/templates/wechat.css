@@ -1,0 +1,236 @@
+/**
+ * 公众号风格 CSS
+ * 白底黑字，舒服留白
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #333;
+    background-color: #fff;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 20px 24px;
+}
+
+.note-content {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* 标题样式 */
+h1 {
+    font-size: 28px;
+    line-height: 1.4;
+    margin: 24px 0 16px 0;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+h2 {
+    font-size: 22px;
+    line-height: 1.4;
+    margin: 20px 0 12px 0;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 16px 0 10px 0;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+h4, h5, h6 {
+    font-size: 17px;
+    line-height: 1.4;
+    margin: 14px 0 8px 0;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+/* 段落 */
+p {
+    margin: 12px 0;
+}
+
+/* 链接 */
+a {
+    color: #576b95;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 列表 */
+ul, ol {
+    margin: 12px 0;
+    padding-left: 28px;
+}
+
+li {
+    margin: 6px 0;
+}
+
+/* 图片自适应 */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 16px 0;
+    border-radius: 4px;
+}
+
+/* 代码块 */
+pre {
+    background-color: #f6f8fa;
+    border-radius: 6px;
+    padding: 16px;
+    overflow-x: auto;
+    margin: 16px 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+code {
+    font-family: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", "Courier New", monospace;
+    font-size: 14px;
+    background-color: #f6f8fa;
+    padding: 2px 6px;
+    border-radius: 3px;
+    word-break: break-all;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+}
+
+/* 表格 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 15px;
+}
+
+th, td {
+    border: 1px solid #e1e1e1;
+    padding: 10px 14px;
+    text-align: left;
+}
+
+th {
+    background-color: #f6f8fa;
+    font-weight: 600;
+}
+
+/* 引用块 */
+blockquote {
+    border-left: 3px solid #576b95;
+    padding: 8px 16px;
+    margin: 16px 0;
+    background-color: #f6f8fa;
+    color: #555;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+/* 分割线 */
+hr {
+    border: none;
+    border-top: 1px solid #e1e1e1;
+    margin: 24px 0;
+}
+
+/* notification 隐藏 */
+.notification,
+.notification-note,
+.notification-warning,
+.notification-error,
+[class*="notification"] {
+    display: none !important;
+}
+
+/* 去掉不必要的容器样式 */
+.note,
+.joplin-editable,
+.content,
+#editor,
+div[class*="editor"] {
+    all: revert;
+}
+
+/* 移动端适配 */
+@media (max-width: 720px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+
+    .container {
+        padding: 16px 16px;
+    }
+
+    pre {
+        font-size: 13px;
+        padding: 12px;
+        margin: 12px -16px;
+        border-radius: 0;
+    }
+
+    code {
+        font-size: 13px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px 10px;
+    }
+}
+
+/* 打印样式 */
+@media print {
+    body {
+        color: #000;
+        background: #fff;
+    }
+
+    .notification {
+        display: none !important;
+    }
+}

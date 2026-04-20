@@ -1,0 +1,16 @@
+{
+	"manifest_version": 1,
+	"id": "top.flaresky.joplin2wechat",
+	"app_min_version": "3.5",
+	"version": "1.0.0",
+	"name": "Share to WeChat",
+	"description": "Transform Joplin share URLs to beautified WeChat-style URLs",
+	"author": "flaresky",
+	"homepage_url": "https://github.com/flareskyqq/joplin2wechat.git",
+	"repository_url": "https://github.com/flareskyqq/joplin2wechat.git",
+	"keywords": [],
+	"categories": [],
+	"screenshots": [],
+	"icons": {},
+	"promo_tile": {}
+}
